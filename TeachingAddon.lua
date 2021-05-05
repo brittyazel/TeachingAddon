@@ -18,7 +18,12 @@ end
 --- Register Events, Hook functions, Create Frames, Get information from
 --- the game that wasn't available in OnInitialize
 function TeachingAddon:OnEnable()
-	-- empty --
+	local years = TeachingAddon.YearCalculator(14567)
+	print(years)
+
+	years = TeachingAddon.YearCalculator(6784059)
+	print(years)
+
 end
 
 --- **OnDisable**, which is only called when your addon is manually being disabled.
@@ -33,9 +38,7 @@ end
 -------------------------------------------------------------------------
 
 
-
----This is a change that I'm doing for Jeremy to show him how GIT works
-
----Here is some more
-
----And more
+function TeachingAddon.YearCalculator(days)
+	local years = floor(days/365)
+	return years
+end
