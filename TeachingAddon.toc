@@ -1,0 +1,12 @@
+## Interface: 90005
+## Title: Teaching Addon
+## Notes: This add-on teaches you how to code add-ons
+## Author: Britt W. Yazel
+## Version: 1.0
+## DefaultState: enabled
+## SavedVariables:
+
+
+Libs\embeds.xml
+
+TeachingAddon.lua
