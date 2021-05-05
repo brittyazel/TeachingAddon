@@ -1,7 +1,8 @@
-
-
-
-TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("EnhancedRaidFrames", "AceTimer-3.0", "AceHook-3.0", "AceEvent-3.0", "AceBucket-3.0", "AceConsole-3.0")
+---
+---TeachingAddon
+---World of Warcraft add-on meant to teach new devs how to code
+---
+TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("TeachingAddon", "AceEvent-3.0", "AceConsole-3.0")
 local TeachingAddon = TeachingAddon
 
 
@@ -30,3 +31,11 @@ end
 
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
+
+
+
+---This is a change that I'm doing for Jeremy to show him how GIT works
+
+---Here is some more
+
+---And more
