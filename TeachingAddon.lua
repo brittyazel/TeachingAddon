@@ -24,6 +24,16 @@ function TeachingAddon:OnEnable()
 	years = TeachingAddon.YearCalculator(6784059)
 	print(years)
 
+	for i=1,100 do
+		if i < 50 then
+			print("My number is " .. tostring(i) .. " and I'm less than 50!")
+		elseif i < 75 then
+			print("My number is " .. tostring(i) .. " and I'm less than 75!")
+		else
+			print("My number is " .. tostring(i) .. " and I'm a real son of a bitch...")
+		end
+	end
+
 end
 
 --- **OnDisable**, which is only called when your addon is manually being disabled.
