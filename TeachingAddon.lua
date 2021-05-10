@@ -1,10 +1,17 @@
 ---
----TeachingAddon
----World of Warcraft add-on meant to teach new devs how to code
+--- TeachingAddon
+--- World of Warcraft add-on meant to teach new devs how to code
 ---
+
+-- Instantiate our new add-on object
 TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("TeachingAddon", "AceEvent-3.0", "AceConsole-3.0")
+-- Create a local pointer for readability (not required)
 local TeachingAddon = TeachingAddon
 
+
+-------------------------------------------------------------------------
+------------------------- Lifecycle Functions ---------------------------
+-------------------------------------------------------------------------
 
 --- **OnInitialize**, which is called directly after the addon is fully loaded.
 --- do init tasks here, like loading the Saved Variables
@@ -18,21 +25,9 @@ end
 --- Register Events, Hook functions, Create Frames, Get information from
 --- the game that wasn't available in OnInitialize
 function TeachingAddon:OnEnable()
-	local years = TeachingAddon.YearCalculator(14567)
-	print(years)
 
-	years = TeachingAddon.YearCalculator(6784059)
-	print(years)
-
-	for i=1,100 do
-		if i < 50 then
-			print("My number is " .. tostring(i) .. " and I'm less than 50!")
-		elseif i < 75 then
-			print("My number is " .. tostring(i) .. " and I'm less than 75!")
-		else
-			print("My number is " .. tostring(i) .. " and I'm a real son of a bitch...")
-		end
-	end
+	-- example function call
+	self:ExampleFunc()
 
 end
 
@@ -45,10 +40,9 @@ function TeachingAddon:OnDisable()
 end
 
 -------------------------------------------------------------------------
+------------------------- New Functions Go Here -------------------------
 -------------------------------------------------------------------------
 
-
-function TeachingAddon.YearCalculator(days)
-	local years = floor(days/365)
-	return years
+function TeachingAddon:ExampleFunc()
+	-- contents would go here
 end
