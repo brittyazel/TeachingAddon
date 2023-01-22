@@ -1,6 +1,6 @@
-## Interface: 90005
+## Interface: 100002
 ## Title: Teaching Addon
-## Notes: This add-on teaches you how to code add-ons
+## Notes: This add-on gives you a blank slate to learn to code addons
 ## Author: Britt W. Yazel
 ## Version: 1.0
 ## DefaultState: enabled

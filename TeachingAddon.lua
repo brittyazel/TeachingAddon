@@ -2,11 +2,17 @@
 --- TeachingAddon
 --- World of Warcraft add-on meant to teach new devs how to code
 ---
+--- This is a useful guide for understanding the addon lifecycle:
+--- https://wowwiki-archive.fandom.com/wiki/Getting_started_with_writing_AddOns
+---
+
+local _, addonTable = ...
 
 -- Instantiate our new add-on object
-TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("TeachingAddon", "AceEvent-3.0", "AceConsole-3.0")
+addonTable.TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("TeachingAddon", "AceEvent-3.0", "AceConsole-3.0")
+
 -- Create a local pointer for readability (not required)
-local TeachingAddon = TeachingAddon
+local TeachingAddon = addonTable.TeachingAddon
 
 
 -------------------------------------------------------------------------
