@@ -1,4 +1,4 @@
-## Interface: 100002
+## Interface: 100005
 ## Title: Teaching Addon
 ## Notes: This add-on gives you a blank slate to learn to code addons
 ## Author: Britt W. Yazel
