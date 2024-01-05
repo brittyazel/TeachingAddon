@@ -1,46 +1,43 @@
 ---
---- TeachingAddon
---- World of Warcraft add-on meant to teach new devs how to code
+--- TeachingAddon is a World of Warcraft® user interface add-on.
+--- Copyright (c) 2017-2023 Britt W. Yazel
+--- This code is licensed under the MIT license (see LICENSE for details)
 ---
---- This is a useful guide for understanding the addon lifecycle:
---- https://wowwiki-archive.fandom.com/wiki/Getting_started_with_writing_AddOns
+--- These are useful guides for understanding the add-on lifecycle:
+--- https://warcraft.wiki.gg/wiki/Create_a_WoW_AddOn_in_15_Minutes
+--- https://warcraft.wiki.gg/wiki/Ace3_for_Dummies
 ---
 
-local _, addonTable = ...
-
--- Instantiate our new add-on object
-addonTable.TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("TeachingAddon", "AceEvent-3.0", "AceConsole-3.0")
+--- Instantiate our new add-on object
+---@class TeachingAddon : AceAddon-3.0 @The main addon object for the TeachingAddon add-on
+_G.TeachingAddon = LibStub("AceAddon-3.0"):NewAddon("TeachingAddon", "AceEvent-3.0", "AceConsole-3.0")
 
 -- Create a local pointer for readability (not required)
-local TeachingAddon = addonTable.TeachingAddon
+local TeachingAddon = _G.TeachingAddon
 
 
 -------------------------------------------------------------------------
 ------------------------- Lifecycle Functions ---------------------------
 -------------------------------------------------------------------------
 
---- **OnInitialize**, which is called directly after the addon is fully loaded.
---- do init tasks here, like loading the Saved Variables
---- or setting up slash commands.
+--- Called directly after the addon is fully loaded.
+--- We do initialization tasks here, such as loading our saved variables or setting up slash commands.
 function TeachingAddon:OnInitialize()
 	-- empty --
 end
 
---- **OnEnable** which gets called during the PLAYER_LOGIN event, when most of the data provided by the game is already present.
---- Do more initialization here, that really enables the use of your addon.
---- Register Events, Hook functions, Create Frames, Get information from
---- the game that wasn't available in OnInitialize
+--- Called during the PLAYER_LOGIN event when most of the data provided by the game is already present.
+--- We perform more startup tasks here, such as registering events, hooking functions, creating frames, or getting 
+--- information from the game that wasn't yet available during :OnInitialize()
 function TeachingAddon:OnEnable()
 
-	-- example function call
+	--- Example Function Call
 	self:ExampleFunc()
 
 end
 
---- **OnDisable**, which is only called when your addon is manually being disabled.
---- Unhook, Unregister Events, Hide frames that you created.
---- You would probably only use an OnDisable if you want to
---- build a "standby" mode, or be able to toggle modules on/off.
+--- Called when our addon is manually being disabled during a running session.
+--- We primarily use this to unhook scripts, unregister events, or hide frames that we created.
 function TeachingAddon:OnDisable()
 	-- empty --
 end
@@ -49,6 +46,7 @@ end
 ------------------------- New Functions Go Here -------------------------
 -------------------------------------------------------------------------
 
+--- Example function
 function TeachingAddon:ExampleFunc()
-	-- contents would go here
+	-- code goes here --
 end

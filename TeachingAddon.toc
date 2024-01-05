@@ -1,11 +1,16 @@
-## Interface: 100005
+## Interface: 100200
 ## Title: Teaching Addon
-## Notes: This add-on gives you a blank slate to learn to code addons
+## Notes: This add-on gives you a blank slate to learn to code World of Warcraft add-ons
+## IconTexture: Interface\Icons\Inv_misc_book_03
 ## Author: Britt W. Yazel
 ## Version: 1.0
 ## DefaultState: enabled
-## SavedVariables:
+## SavedVariables: TeachingAddonDB
+## SavedVariablesPerCharacter:
+## X-License: MIT
 
+# Libraries
 Libs\embeds.xml
 
+# Core
 TeachingAddon.lua
