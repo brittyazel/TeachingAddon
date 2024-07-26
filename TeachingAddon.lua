@@ -1,6 +1,6 @@
 ---
 --- TeachingAddon is a World of Warcraft® user interface add-on.
---- Copyright (c) 2017-2023 Britt W. Yazel
+--- Copyright (c) 2017-2024 Britt W. Yazel
 --- This code is licensed under the MIT license (see LICENSE for details)
 ---
 --- These are useful guides for understanding the add-on lifecycle:
