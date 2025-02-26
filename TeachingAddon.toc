@@ -1,4 +1,4 @@
-## Interface: 11505, 40401, 110007
+## Interface: 11506, 40402, 110100
 ## Title: Teaching Addon
 ## Notes: This add-on gives you a blank slate to learn to code World of Warcraft add-ons
 ## IconTexture: Interface\Icons\Inv_misc_book_03
